@@ -1,13 +1,38 @@
+.CardEditor{
+    background-color: rgb(24, 78, 24);
+}
+
 .CardEditor h2{
-    background-color: lightblue;
+    color: rgb(0, 0, 0);
+    background-color: gray;
+    text-align: center; /* aligns text centrally */
+    border: 5px solid rgb(255, 255, 255); /* CSS note: need to add "solid <color> for correct border syntax*/
+    border-radius: 5px;
+    margin: 0 auto; /* centers element horizontally */
+    max-width: 25%;
+    font-size: 40px;
 }
 
-
-.CardEditor table{
-    margin: 0 auto;
-}
-
-.CardEditor .input-components{
+.CardEditor .input-table {
     display: flex;
-    margin-left: 700px;
+    justify-content: center;  /* Centers the table horizontally */
+    margin-top: 50px;
 }
+
+.CardEditor table {
+    width: 80%;
+    border-spacing: 20px;  /* Adds space between the table cells */
+    border-collapse: separate;  /* Ensures that spacing is applied */
+}
+
+.CardEditor th, .CardEditor td {
+    padding: 30px;  /* Add padding inside the cells for better spacing */
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: gray;
+    font-size: 20px;
+}
+
+
+
+

@@ -30,6 +30,7 @@ function CardEditor(props) {
     //creates header
     <div className = "CardEditor"> 
       <h2> Card Editor</h2> 
+      <div className= "input-table">
       <table>
         <thead>
           <tr>
@@ -42,15 +43,17 @@ function CardEditor(props) {
           {cards}
         </tbody>
       </table>
+      </div>
       <br />
       <div className = "input-components">
         <input placeholder="front of card" value={front} onChange={(e) => setFront(e.target.value)} />
         <input placeholder="back of card" value={back} onChange={(e) => setBack(e.target.value)} />
         <button type="button" onClick={() => addCard({ front, back })}>add card</button>
         <hr />
+      </div>
+      <div className="card-mode-button">
         <button type="button" onClick={() => props.switchMode()}>switch to card viewer</button>
       </div>
-     
     </div>
 
   );
