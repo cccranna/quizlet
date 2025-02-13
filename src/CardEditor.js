@@ -34,9 +34,9 @@ function CardEditor(props) {
       <table>
         <thead>
           <tr>
-            <th>Front</th>
-            <th>Back</th>
-            <th>Delete</th>
+            <th style={{width:"600px"}}>Front</th>
+            <th style={{width: "600px"}}>Back</th>
+            <th style={{width: "50px"}}>Delete</th>
           </tr>
         </thead>
         <tbody>
