@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
+ import './App.css';
+
 
 function CardEditor(props) {
   const [front, setFront] = useState(''); //keeps track of the state of the front of the card, initializes it to an empty string
@@ -25,8 +27,9 @@ function CardEditor(props) {
   });
 
   return (
-    <div>
-      <h2>Card Editor</h2>
+    //creates header
+    <div className = "CardEditor"> 
+      <h2> Card Editor</h2> 
       <table>
         <thead>
           <tr>
@@ -40,11 +43,14 @@ function CardEditor(props) {
         </tbody>
       </table>
       <br />
-      <input placeholder="front of card" value={front} onChange={(e) => setFront(e.target.value)} />
-      <input placeholder="back of card" value={back} onChange={(e) => setBack(e.target.value)} />
-      <button type="button" onClick={() => addCard({ front, back })}>add card</button>
-      <hr />
-      <button type="button" onClick={() => props.switchMode()}>switch to card viewer</button>
+      <div className = "input-components">
+        <input placeholder="front of card" value={front} onChange={(e) => setFront(e.target.value)} />
+        <input placeholder="back of card" value={back} onChange={(e) => setBack(e.target.value)} />
+        <button type="button" onClick={() => addCard({ front, back })}>add card</button>
+        <hr />
+        <button type="button" onClick={() => props.switchMode()}>switch to card viewer</button>
+      </div>
+     
     </div>
 
   );

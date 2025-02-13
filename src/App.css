@@ -1,0 +1,13 @@
+.CardEditor h2{
+    background-color: lightblue;
+}
+
+
+.CardEditor table{
+    margin: 0 auto;
+}
+
+.CardEditor .input-components{
+    display: flex;
+    margin-left: 700px;
+}
