@@ -1,5 +1,7 @@
 .CardEditor{
+    min-height: 100vh; /* takes up full screen view */
     background-color: rgb(24, 78, 24);
+    
 }
 
 .CardEditor h2{
